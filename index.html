@@ -77,7 +77,7 @@
           </div>
           <a class="btn btn-ghost space-x-1">
             <span class="text-xl font-bold">English</span>
-            <img src="assets/logo.png" alt="logo" />
+            <img src="./assets/logo.png" alt="logo" />
             <span class="text-lg font-semibold font_Bangla">জানালা</span>
           </a>
         </div>
@@ -118,7 +118,7 @@
 
       <!-- Image  -->
       <div class="flex-1">
-        <img src="assets/hero-student.png" alt="" />
+        <img src="./assets/hero-student.png" alt="" />
       </div>
     </section>
 
@@ -133,18 +133,17 @@
     <!-- show all word -->
     <section
       id="showAllWord"
-      class="bg-gray-50 rounded-lg p-10 my-10 w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
+      class="bg-gray-50 rounded-lg p-10 my-10 w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
     >
-      <div></div>
-      <div class="text-center space-y-4">
+      <div class="text-center space-y-4 col-span-4">
         <p class="font_Bangla text-xs text-gray-400">
           আপনি এখনো কোন Lesson Select করেন নাই !
         </p>
         <h6 class="font_Bangla text-3xl font-bold">একটি Lesson Select করুন।</h6>
       </div>
-      <div></div>
     </section>
 
+    <!-- FAQ Section  -->
     <section class="my-20 w-11/12 mx-auto space-y-3">
       <h3 class="text-center font-bold text-2xl mb-10">
         <span class="text-[#00BCFF]">Frequently</span> Asked Questions
@@ -208,14 +207,14 @@
     >
       <aside>
         <a class="flex items-center gap-2">
-            <span class="text-lg font-bold">English</span>
-            <img src="assets/logo.png" alt="logo" />
-            <span class=" font-semibold font_Bangla">জানালা</span>
-          </a>
+          <span class="text-lg font-bold">English</span>
+          <img src="assets/logo.png" alt="logo" />
+          <span class="font-semibold font_Bangla">জানালা</span>
+        </a>
         <p class="text-gray-500">
-        <span>ইংরেজি শিখুন সহজে</span>
+          <span>ইংরেজি শিখুন সহজে</span>
           <br />
-        Providing ED-Tech Applications since 2026
+          Providing ED-Tech Applications since 2026
         </p>
       </aside>
       <nav>
@@ -266,6 +265,23 @@
         </div>
       </nav>
     </footer>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="details_Modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div  id="detailsContainer">
+          
+
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn btn-primary text-[12px]">Complete Learning</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <script src="Script/lessonButton.js"></script>
   </body>
