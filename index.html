@@ -36,7 +36,6 @@
     <link rel="stylesheet" href="Style/style.css" />
   </head>
   <body>
-
     <!-- Navber Section  -->
     <Navbar>
       <div class="navbar bg-[#BADEFF30] shadow-sm">
@@ -101,23 +100,173 @@
     </Navbar>
 
     <!-- Banner Section  -->
-     <section class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 p-5 w-11/12 mx-auto">
-
+    <section
+      class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 p-5 w-11/12 mx-auto"
+    >
       <!-- content -->
       <div class="flex-1 space-y-4 text-center lg:text-start">
-        <h2 class="text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy !!</h2>
-        <p class="font_Bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+        <h2 class="text-4xl font-bold">
+          <span class="text-[#00BCFF]">English</span> is Easy !!
+        </h2>
+        <p class="font_Bangla">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
         <button class="btn btn-primary px-5">Get Started</button>
       </div>
-      
+
       <!-- Image  -->
-       <div class="flex-1">
-        <img src="assets/hero-student.png" alt="">
-       </div>
+      <div class="flex-1">
+        <img src="assets/hero-student.png" alt="" />
+      </div>
+    </section>
 
-     </section>
+    <!-- Learn Section  -->
+    <section class="text-center my-10 p-5 w-11/12 mx-auto">
+      <h3 class="text-xl font-bold mb-5">
+        <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+      </h3>
+      <div id="lessonButton" class="flex flex-wrap justify-center gap-5"></div>
+    </section>
 
-     
+    <!-- show all word -->
+    <section
+      id="showAllWord"
+      class="bg-gray-50 rounded-lg p-10 my-10 w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
+    >
+      <div></div>
+      <div class="text-center space-y-4">
+        <p class="font_Bangla text-xs text-gray-400">
+          আপনি এখনো কোন Lesson Select করেন নাই !
+        </p>
+        <h6 class="font_Bangla text-3xl font-bold">একটি Lesson Select করুন।</h6>
+      </div>
+      <div></div>
+    </section>
 
+    <section class="my-20 w-11/12 mx-auto space-y-3">
+      <h3 class="text-center font-bold text-2xl mb-10">
+        <span class="text-[#00BCFF]">Frequently</span> Asked Questions
+      </h3>
+      <div class="collapse collapse-arrow bg-gray-50 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold">
+          1. How can I start learning English on this website?
+        </div>
+        <div class="collapse-content text-sm">
+          You can start by exploring our beginner lessons, interactive
+          exercises, and quizzes. We also offer structured courses to guide you
+          step by step.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-50 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          2. Is this website free to use?
+        </div>
+        <div class="collapse-content text-sm">
+          **Yes**, baseline access is free with a Google Account.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-50 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          3. Do I need to create an account?
+        </div>
+        <div class="collapse-content text-sm">
+          No, you do not strictly need to create an account for basic use, but
+          having one unlocks full functionality.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-50 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          4. How can I build my English vocabulary?
+        </div>
+        <div class="collapse-content text-sm">
+          Building a strong English vocabulary is most effective when you
+          combine active learning with daily context. Here is a simple, proven
+          system you can use:
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-50 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          5. Do you offer certificates for completed courses?
+        </div>
+        <div class="collapse-content text-sm">
+          As an AI language model, I do not directly host or issue certificates
+          myself.
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer
+      class="footer sm:footer-horizontal justify-between bg-[#BADEFF40] text-neutral-content text-black py-10 px-20 mt-10"
+    >
+      <aside>
+        <a class="flex items-center gap-2">
+            <span class="text-lg font-bold">English</span>
+            <img src="assets/logo.png" alt="logo" />
+            <span class=" font-semibold font_Bangla">জানালা</span>
+          </a>
+        <p class="text-gray-500">
+        <span>ইংরেজি শিখুন সহজে</span>
+          <br />
+        Providing ED-Tech Applications since 2026
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              aria-label="Twitter"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              aria-label="YouTube"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              aria-label="Facebook"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="Script/lessonButton.js"></script>
   </body>
 </html>
