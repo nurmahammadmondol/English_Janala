@@ -33,12 +33,91 @@
     />
 
     <!-- Css link  -->
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/style.css" />
   </head>
   <body>
 
-    <h1 class="text-center font-bold text-4xl text-purple-400">Hello..............</h1>
+    <!-- Navber Section  -->
+    <Navbar>
+      <div class="navbar bg-[#BADEFF30] shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                aria-label="Menu"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li class="">
+                <a href=""><i class="fa-solid fa-question"></i> FAQ</a>
+              </li>
+              <li class="">
+                <a href=""><i class="fa-solid fa-book-open"></i> Learn</a>
+              </li>
+              <li class="">
+                <a href=""
+                  ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost space-x-1">
+            <span class="text-xl font-bold">English</span>
+            <img src="assets/logo.png" alt="logo" />
+            <span class="text-lg font-semibold font_Bangla">জানালা</span>
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="flex items-center gap-3">
+            <li class="btn btn-outline btn-primary">
+              <a href=""><i class="fa-solid fa-question"></i> FAQ</a>
+            </li>
+            <li class="btn btn-outline btn-primary">
+              <a href=""><i class="fa-solid fa-book-open"></i> Learn</a>
+            </li>
+            <li class="btn btn-outline btn-primary">
+              <a href=""
+                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Navbar>
 
+    <!-- Banner Section  -->
+     <section class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 p-5 w-11/12 mx-auto">
+
+      <!-- content -->
+      <div class="flex-1 space-y-4 text-center lg:text-start">
+        <h2 class="text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy !!</h2>
+        <p class="font_Bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+        <button class="btn btn-primary px-5">Get Started</button>
+      </div>
+      
+      <!-- Image  -->
+       <div class="flex-1">
+        <img src="assets/hero-student.png" alt="">
+       </div>
+
+     </section>
+
+     
 
   </body>
 </html>
