@@ -5,7 +5,6 @@ const lessonButton = () => {
     .then((data) => loadButton(data.data));
 };
 
-
 // old version :
 // const loadButton = (data) => {
 //   const lessonButton = document.getElementById("lessonButton");
@@ -22,8 +21,6 @@ const lessonButton = () => {
 //      button.classList.add('active');
 //   });
 // };
-
-
 
 const loadButton = (data) => {
   const lessonButton = document.getElementById("lessonButton");
