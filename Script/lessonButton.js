@@ -1,3 +1,9 @@
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
 const lessonButton = () => {
   const url = "https://openapi.programming-hero.com/api/levels/all";
   fetch(url)
@@ -5,22 +11,6 @@ const lessonButton = () => {
     .then((data) => loadButton(data.data));
 };
 
-// old version :
-// const loadButton = (data) => {
-//   const lessonButton = document.getElementById("lessonButton");
-//   data.forEach((btn) => {
-//     const button = document.createElement("button");
-//     // console.log(btn)
-   
-
-//     button.innerHTML = `
-//         <button onclick="handleLevel(${btn.level_no})" id="lesson${btn.level_no}" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Lesson -${btn.level_no}</button>
-//         `;
-
-//     lessonButton.appendChild(button);
-//      button.classList.add('active');
-//   });
-// };
 
 const loadButton = (data) => {
   const lessonButton = document.getElementById("lessonButton");
@@ -76,7 +66,7 @@ const showData = (data) => {
                 <button onclick="handleDetails(${data?.id})" class="btn bg-[#1A91FF10]">
                     <i class="fa-solid fa-circle-info "></i>
                 </button>
-                <button class="btn bg-[#1A91FF10]">
+                <button onclick="pronounceWord('${data?.word}')" class="btn bg-[#1A91FF10]">
                     <i class="fa-solid fa-volume "></i>
                 </button>
              </div>
